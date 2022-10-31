@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="fcc-test-suite-template-master/css/style.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title" class="header">Survey Form</h1>
+				<p id="description" class="description">Thank you for taking your time to fill this form </p>
+			</header>
+			<form id="survey-form">
+				<div class="group">
+					<label id="name-label">Name</label>
+					<input class="form-control" type="text" id="name" required placeholder="Enter Your Name"></input>
+				</div>
+				<div class="group">
+					<label id="email-label">Email</label>
+					<input class="form-control" type="email" id="email" required placeholder="Enter Your email"></input>
+				</div>
+				<div class="group">
+					<label id="number-label">Age (Optional)</label>
+					<input class="form-control" type="number" id="number" min="0", max="100" placeholder="Age"></input>
+				</div>
+				<div class="group">
+					<p> What is your role? </p>
+					<select class="form-control" id = "dropdown" name="role" required>
+						<option disabled selected value>Select Your role</option>
+						<option>Students</option>
+						<option>Teacher </option>
+						<option>Officer</option>
+						<option>Others </option>
+					</select>
+				</div>
+				<div class="group">
+					<p> Are you familiar with Web Development? </p>
+					<label>
+						<input type ="radio" name =
+							      "name" value="sure"
+								     class="input-radio"
+								     checked>Definitely
+						</input>
+					</label>
+					<label>
+						<input type ="radio"
+						       name = "name"
+						       value="maybe"
+						       class="input-radio"
+						       checked>Some how
+						</input>
+					</label>
+					<label>
+						<input type
+						       ="radio" name =
+							 "name"
+						       value="no"
+						       class="input-radio"
+						       checked> No, I am not
+						</input>
+					</label>
+				</div>
+				<div class="group">
+					<p> What is your future career? </p>
+					<select class="form-control" id = "dropdown">
+						<option disabled selected value>Select One</option>
+						<option>Developer</option>
+						<option> Project Manager </option>
+						<option> System Analyst</option>
+						<option> Not Mentioned </option>
+					</select>
+				</div>
+				<div class="group">
+					<p> What programming language do you want to learn? </p>
+					<span class="clue">(Select all that apply)</span>
+					<label>
+						<input type ="checkbox" name =
+							      "name" value = 'python'
+						       class="input-checkbox">
+						Python</input>
+					</label>
+					<label>
+						<input type ="checkbox"
+						       name = "name" value =
+							       'java'
+						       class="input-checkbox">
+						Java </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'ruby'
+						       class="input-checkbox">
+						Ruby </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'C'
+						       class="input-checkbox">
+						C </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'Javascript'
+						       class="input-checkbox">
+						Javascript</input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'C++'
+						       class="input-checkbox">
+						C++ </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'Bash scripting'
+						       class="input-checkbox">
+						Bash Scripting </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'C'
+						       class="input-checkbox">
+						C </input>
+					</label>
+
+
+				</div>
+				<div class="group">
+					<p>Any comment or suggestions?(optional)</p>
+					<textarea id="comments" class="input-textarea" placeholder="Say Something..."></textarea>
+				</div>
+				<div class="group"> 
+					<button type="submit" id="submit" class="submit-button">Submit</button>
+				</div>
+			</form>
+		</div>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<script  src="js/index.js"></script>
+	</body>
+</html>
